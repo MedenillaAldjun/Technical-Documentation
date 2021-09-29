@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Technical Documentation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav id="navbar">
+  <header>HTML Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What is HTML?</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#JavaScript_and_Java">Evolution of HTML</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">HTML Basics</a></li>
+    <li><a class="nav-link" href="#Variables">HTML Elements</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables">HTML Attributes</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope">HTML Headings</a></li>
+    <li><a class="nav-link" href="#Global_variables">HTML Paragraphs</a></li>
+    <li><a class="nav-link" href="#Constants">HTML Styles</a></li>
+    <li><a class="nav-link" href="#Data_types">HTML Formatting</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">HTML Quotations</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">HTML Comments</a></li>
+    <li>
+      <a class="nav-link" href="#Function_declarations"
+        >HTML Classes</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+       HTML (Hypertext Markup Language) is used to create document
+       on the World Wide Web. It is simply a collection of certain key
+       words called ‘Tags’ that are helpful in writing the document to be
+       displayed using a browser on Internet.
+      </p>
+
+      <p>
+        It is a platform independent language that can be used on any
+        platform such as Windows, Linux, Macintosh, and so on. To
+        display a document in web it is essential to mark-up the different
+        elements (headings, paragraphs, tables, and so on) of the
+        document with the HTML tags. To view a mark-up document,
+        user has to open the document in a browser. A browser
+        understands and interpret the HTML tags, identifies the structure
+        of the document (which part are which) and makes decision about
+        presentation (how the parts look) of the document.
+      </p>
+      <ul>
+        <li>
+         HTML also provides tags to make the document look attractive
+         using graphics, font size and colors. User can make a link to the
+         other document or the different section of the same document
+         by creating Hypertext Links also known as Hyperlinks.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What is HTML?</header>
+    <article>
+      <p>HTML is the standard markup language for creating Web pages:</p>
+
+      <ul>
+        <li>
+          HTML stands for Hyper Text Markup Language.
+        </li>
+        <li>
+          HTML is the standard markup language for creating Web pages.
+        </li>
+        <li>
+          HTML describes the structure of a Web page.
+        </li>
+        <li>
+          HTML consists of a series of elements.
+        </li>
+        <li>
+          HTML elements tell the browser how to display the content.
+        </li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>EVOLUTION OF HTML</header>
+    <article>
+      <p>
+        HTML is a very evolving markup language and has evolved with various versions updating. Long before its revised standards and specifications are carried in, each version has allowed its user to create web pages in a much easier and prettier way and make sites very efficient.
+      </p>
+
+      <p>
+        In contrast to Java's compile-time system of classes built by
+        declarations, JavaScript supports a runtime system based on a small
+        number of data types representing numeric, Boolean, and string values.
+        JavaScript has a prototype-based object model instead of the more common
+        class-based object model. The prototype-based model provides dynamic
+        inheritance; that is, what is inherited can vary for individual objects.
+        JavaScript also supports functions without any special declarative
+        requirements. Functions can be properties of objects, executing as
+        loosely typed methods.
+      </p>
+<ul>     
+      <li>
+        HTML was created by Sir Tim Berners-Lee in late 1991 but was not released officially, published in 1995 as HTML 2.0. HTML 4.01 was published in late 1999 and was a major version of HTML.
+      </li>
+      <li>
+        HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers. But not many of the developers were involved in creating websites. So the language was also not growing.
+      </li>
+      <li>
+        Then comes the HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with that few additional features, which remained as the standard markup language for designing and creating websites until January 1997 and refined various core features of HTML.
+      </li>
+      <li>
+        Then comes the HTML 3.0, where Dave Raggett who introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages. But these powerful features of new HTML slowed down the browser in applying further improvements.
+      <li>
+        Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is currently released and used worldwide. HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.
+      </li>
+</ul>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>HTML BASICS</header>
+    <article>
+      HTML Documents
+All HTML documents must start with a document type declaration: <code style="color:red;"> < !DOCTYPE html > </code>.
+
+The HTML document itself begins with <code style="color:red;"> < html > and ends with < /html > </code>.
+
+The visible part of the HTML document is between <code style="color:red;"> < body > and < /body > </code>.
+Example:
+      <code style="color:red;"
+      > < !DOCTYPE html >
+        < html >
+        < body >
+
+        < h1 >My First Heading< /h1 >
+        < p >My first paragraph.< /p >
+
+        < /body >
+        < /html >
+      </code>
+
+      Reminder: remove the spaces between each command!
+    </article>
+
+  </section>
+  <section class="main-section" id="Variables">
+    <header>HTML ELEMENTS</header>
+    <p>
+      The HTML element is everything from the start tag to the end tag:
+      <code style="color:red;"> < tagname > Content goes here... < /tagname > </code>.
+    </p>
+
+    <p>
+      HTML headings are defined with the  <code style="color:red;"> < h1 > to < h6 > tags </code>.
+
+      Defines the most important heading: <code style="color:red;"> < h1 > </code>. Defines the least important heading:  <code style="color:red;"> < h6 > </code> 
+    </p> 
+
+    <p>
+      The < h1 > element defines a heading.
+
+      It has a start tag < h1 > and an end tag </ h1 >:
+
+      < h1 >My First Heading</ h1 >
+      The < p > element defines a paragraph.
+
+      It has a start tag < p > and an end tag < /p >:
+
+       < p >My first paragraph.< /p > </p>
+
+    Example:
+      <code style="color:red;"
+      > < h1 >This is heading 1< /h1 >
+        < p > My first paragraph. < /p >
+        < h2 >This is heading 2< /h2 >
+        < p > My second paragraph. < /p >
+        < h3 >This is heading 3< /h3 >
+        < p > My third paragraph. < /p >
+      </code>
+
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>HTML ATTRIBUTES</header>
+    <article>
+       HTML attributes provide additional information about HTML elements.
+       <ul>
+         <li>
+           All HTML elements can have attributes.
+         </li>
+         <li>
+           Attributes provide additional information about elements.
+         </li>
+         <li>
+          Attributes are always specified in the start tag.
+         </li>
+         <li>
+          Attributes usually come in name/value pairs like: name="value".
+         </li>
+       </ul>
+
+      <p>
+       The href Attribute: a
+        <code style="color:red;"> < a > </code> The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed: <code style="color:red;"> < < img src="img_girl.jpg"> < /a> </code>
+      </p>
+      <p>
+       The src Attribute: src
+        <code style="color:red;"> < imr src > </code> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: <code style="color:red;"> < a href="https://www.w3schools.com">Visit W3Schools< /a> </code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>HTML HEADINGS</header>
+    <article>
+      <p>
+        HTML headings are titles or subtitles that you want to display on a webpage.
+      </p>
+      </section>
+        Example: 
+        <code style="color:red;"
+      > <h1>Heading 1</h1>       
+        <h2>Heading 2</h2>     
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6> </code>
+  
+  <section class="main-section" id="Global_variables">
+    <header>HTML PARAGRAPHS</header>
+    <article>
+      <p>
+        A paragraph always starts on a new line, and is usually a block of text.
+      </p>
+
+      <p>
+       The HTML code: <code style="color:red;"
+      > < p > </code >element defines a paragraph.
+
+        A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+        Example: 
+        <code style="color:red;"
+      > < p >This is a paragraph.< /p>
+        < p >This is another paragraph.< /p> </code>
+      </p>
+      <p>
+        <strong>HTML Display</strong> <br>
+        You cannot be sure how HTML will be displayed.
+        Large or small screens, and resized windows will create different results.
+        With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+        The browser will automatically remove any extra spaces and lines when the page is displayed:
+        Example: 
+        <code style="color:red;"
+      > < p >
+      This paragraph
+      contains a lot of lines
+      in the source code,
+      but the browser
+      ignores it.
+      < /p>
+
+      < p >
+      This paragraph
+      contains         a lot of spaces
+      in the source         code,
+      but the        browser
+      ignores it.
+      < /p> </code>
+      
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>HTML STYLES</header>
+    <article>
+      <p>
+        The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+        Setting the style of an HTML element, can be done with the style attribute.
+        The HTML style attribute has the following syntax:
+        <code style="color:red;"
+      > < tagname style="property:value;"> </code>
+
+      </p>
+       <strong>Background Color</strong> <br>
+       The CSS background-color property defines the background color for an HTML element.
+
+      <code style="color:red;"
+      > < body style="background-color:powderblue;">
+
+        < h1>This is a heading< /h1>
+        < p>This is a paragraph.< /p>
+
+        < /body> </code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>HTML TEXT FORMATTING</header>
+    <article>
+      <p>HTML contains several elements for defining text with a special meaning:</p>
+      <ul>
+        <code style="color:red;"
+      > <li> < b > - Bold text </li>
+        <li> < strong > - Important text </li>
+        <li> < i > - Italic text </li>
+        <li> < em > - Emphasized text </li>
+        <li> < mark > - Marked text </li>
+        <li> < small > - Smaller text </li>
+        <li> < del > - Deleted text </li>
+        <li> < ins > - Inserted text </li>
+        <li> < sub > - Subscript text </li>
+        <li> < sup > - Superscript text </li> </code>
+      </ul>  
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>HTML QUOTATIONS</header>
+    <article>
+      In this chapter we will go through the HTML elements: <code style="color:red;"
+      > < blockquote > 
+        < q >
+        < abbr >
+        < address >
+        < cite > 
+        < bdo > </code> 
+      <p>
+      <strong>blockquote</strong> <code style="color:red;"
+      > < blockquote > </code>
+      defines a section that is quoted from another source,browsers usually indent < blockquote > elements.
+      </p>
+
+      <p>
+      <strong>q</strong> <code style="color:red;"
+      > < q > </code>
+      The HTML < q > tag defines a short quotation.
+      Browsers normally insert quotation marks around the quotation.
+      </p>
+
+      <p>
+      <strong>abbr</strong> <code style="color:red;"
+      > < abbr > </code>
+      The HTML < abbr > tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+      Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+      </p>
+
+      <p>
+      <strong>address</strong> <code style="color:red;"
+      > < address > </code>
+      The HTML < address > tag defines the contact information for the author/owner of a document or an article.
+      The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+      The text in the < address > element usually renders in italic, and browsers will always add a line break before and after the < address > element.
+      </p>
+
+      <p>
+      <strong>cite</strong> <code style="color:red;"
+      > < cite > </code>
+      The HTML < cite > tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+      </p>
+
+      <p>
+      <strong>bdo</strong> <code style="color:red;"
+      > < bdo > </code>
+      BDO stands for Bi-Directional Override.
+      The HTML < bdo > tag is used to override the current text direction:
+      </p>
+    
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>HTML COMMENTS</header>
+    <article>
+      HTML comments are not displayed in the browser, but they can help document your HTML source code.
+      <p>
+      <strong>HTML Comment Tag</strong> <br>
+      You can add comments to your HTML source by using the following syntax:
+      <code style="color:red;"
+      > < !-- Write your comments here -- > </code>
+     </p>
+    Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+
+    </article>
+  </section>
+  <section class="main-section" id="Function_declarations">
+    <header>HTML CLASSES</header>
+    <article>
+     The <STRONG>class</STRONG> attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+
+      In the following example we have three <STRONG >div</STRONG> elements with a class attribute with the value of "city". All of the three < div > elements will be styled equally according to the <strong> .city </strong> style definition in the head section:
+
+      Example:
+      <code style="color:red;"
+      > <!DOCTYPE html>
+      < html>
+      < head>
+      < style>
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      < /style>
+      < /head>
+      < body>
+
+      < div class="city">
+        < h2>London< /h2>
+        < p>London is the capital of England.< /p>
+      < /div>
+
+      < div class="city">
+        < h2>Paris< /h2>
+        < p>Paris is the capital of France.< /p>
+      < /div>
+
+      < div class="city">
+        < h2>Tokyo< /h2>
+        < p>Tokyo is the capital of Japan.< /p>
+      < /div>
+
+      < /body>
+      < /html> </code>
+      Tip: The class attribute can be used on any HTML element.
+      <br>
+      Note: The class name is case sensitive!
+     
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/html/default.asp"
+            target="_blank"
+            >HTML TUTORIAL</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
